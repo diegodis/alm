@@ -11,6 +11,7 @@ background-color: #f4f4f4;
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.54);
   -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.54);
   box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.54);
+  padding: 0.5em;
 }
 
 h5{
@@ -29,4 +30,12 @@ h5{
 .star{
   width:25px;
   padding:4px;
+}
+
+.flex-column{
+  width: 100%;
+}
+
+.navbar{
+  padding: 0px;
 }

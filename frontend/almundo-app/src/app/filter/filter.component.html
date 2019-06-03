@@ -5,9 +5,8 @@
 
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span>filtrar</span>
-    <span class="navbar-toggler-icon"></span>
-
+<span>filtrar</span>
+    <span class="fa fa-fw fa-user"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -19,13 +18,16 @@
       </div>
     </li>
     <li class="nav-item">
-      <div class="contHotel form-group">
-        <h5> <img src="assets/icons/filters/search.svg"  class="star"/> Nombre del hotel</h5>
-        <div>
-          <input [(ngModel)]='hotelName' class="form-control">
-          <button type="button" (click)="hotels.getHotelsFilter(hotelName, hotelStars)" class="btn-primary"> Aceptar</button>
+      <div class="contHotel">
+        <div class="row">
+          <h5> <img src="assets/icons/filters/search.svg"  class="star"/> Nombre del hotel</h5>
+          <div class="col-lg-9">
+            <input [(ngModel)]='hotelName' class="form-control">
+          </div>
+          <div class="col-lg-3">
+            <button type="button" (click)="hotels.getHotelsFilter(hotelName, hotelStars)" class="btn-primary"> Aceptar</button>
+          </div>
         </div>
-
       </div>
     </li>
     <li class="nav-item">
