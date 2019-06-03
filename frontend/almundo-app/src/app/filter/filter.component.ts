@@ -22,4 +22,10 @@ export class FilterComponent implements OnInit {
     return new Array(i);
   }
 
+  navbarOpen = false;
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
+
 }
