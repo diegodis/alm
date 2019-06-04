@@ -4,6 +4,9 @@ const Hotel = require("../models/hoteles");
 
 router.get("/" , async (req, res) => {
   req.query = parseValues(req.query);
+  if(req.query.name != undefined && req.query.name != ""){
+      req.query.name = req.query.name.trim();
+  }
   console.log(req.query);
   const hotel = await Hotel.find(req.query);
   res.send(hotel);
